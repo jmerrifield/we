@@ -21,14 +21,16 @@
       }
 
       section {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 17%;
+        padding-right: 17%;
         margin-bottom: 15px;
       }
 
       section .content {
         background-color: white;
-        padding: 40px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 100px;
       }
 
       p {
@@ -136,6 +138,7 @@
 
       nav a.active {
         color: rgb(216, 32, 40);
+        transition: color 300ms;
       }
 
       nav:after {
@@ -147,6 +150,10 @@
       .sticky {
         top: 0;
         position: fixed;
+      }
+
+      section#index {
+        padding-bottom: 60px;
       }
 
       section#say-hello {
@@ -187,6 +194,10 @@
         background-image: url(team-background.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
+      }
+
+      section#team img {
+        width: 100%;
       }
 
       .center {
@@ -509,14 +520,14 @@
 
         recalcPosition()
 
-        setInterval(function () {
+        $window.on('scroll', _.throttle(function () {
           var newScrollTop = $window.scrollTop()
           if (lastScrollTop !== newScrollTop) {
             lastScrollTop = newScrollTop
 
             recalcPosition()
           }
-        }, 100)
+        }, 100))
 
         $('a[href^=#]').on('click', function (e) {
           e.preventDefault()
