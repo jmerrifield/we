@@ -5,50 +5,24 @@
     </style>
 
     <style type='text/css'>
-      /*  SECTIONS  */
-
-      .section {
-        clear: both;
-        padding: 0px;
-        margin: 0px;
-      }
-      /*  COLUMN SETUP  */
-
       .col {
-        display: block;
+        width: 320px;
         float: left;
-        margin: 1% 0 1% 3.2%;
+
       }
 
-      .col:first-child {
-        margin-left: 0;
-      }
-      /*  GROUPING  */
-
-      .group:before,
-      .group:after {
-        content: "";
-        display: table;
-      }
-
-      .group:after {
-        clear: both;
+      .col:nth-of-type(1) {
+        margin-right: 60px;
       }
 
       .group {
-        zoom: 1;
-        /* For IE 6/7 */
-      }
-      /*  GRID OF TWO  */
-
-      .span_2_of_2 {
-        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        width: 700px;
       }
 
-      .span_1_of_2 {
-        width: 48.4%;
-      }
-      /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+      span.clear { clear: left; display: block; }
 
       @media only screen and (max-device-width: 767px) {
         .col {
@@ -71,6 +45,8 @@
         background-color: rgb(216, 32, 40);
         color: white;
         padding: 40px;
+        text-align: center;
+        min-width: 700px;
       }
 
       h1 {
@@ -173,7 +149,6 @@
         <blockquote>
           'Shall <span class='logo'>we</span> solve this problem together?'
         </blockquote>
-
       </div>
 
       <div class="col span_1_of_2">
@@ -198,6 +173,7 @@
           leanne@wedesignbetterservices.co.nz
         </a>
       </div>
+      <span class='clear' />
     </div>
   </body>
 </html>
