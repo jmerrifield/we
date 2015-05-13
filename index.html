@@ -24,21 +24,6 @@
 
       span.clear { clear: left; display: block; }
 
-      @media only screen and (max-device-width: 767px) {
-        .col {
-          margin: 1% 0 1% 0%;
-        }
-      }
-
-      @media only screen and (max-device-width: 767px) {
-        .span_2_of_2,
-        .span_1_of_2 {
-          width: 100%;
-        }
-      }
-    </style>
-
-    <style type='text/css'>
       body {
         font-family: 'Helvetica neue', Helvetica;
         line-height: 1.15;
@@ -93,6 +78,8 @@
         margin-top: 40px;
       }
 
+
+
       .logo {
         font-family: 'Helvetica neue', Helvetica;
         font-weight: bold;
@@ -144,6 +131,46 @@
         color: black;
         text-decoration: none;
       }
+
+      @media only screen and (max-device-width: 767px) {
+        .col {
+          margin: 1% 0 1% 0%;
+        }
+
+        .span_2_of_2,
+        .span_1_of_2 {
+          width: 100%;
+        }
+
+        body {
+          font-size: 130%;
+        }
+
+        .section {
+          margin-top: 160px;
+        }
+
+        .say-hello {
+          font-size: 5em;
+        }
+
+        .say-hello.phone {
+          font-size: 4em;
+        }
+
+        h2 {
+          font-size: 3.5em;
+        }
+
+        h1 {
+          font-size: 4.5em;
+          margin-right: 30px;
+        }
+
+        .contact {
+          margin-top: 130px;
+        }
+      }
     </style>
   </head>
 
@@ -168,7 +195,7 @@
         <h3>Proper noun:</h3>
         <p>
           a New Zealand design collective who re-design services, improve customer
-          experiences, and embed creative thinking within private, public, and not-for-profit
+          experiences, and inspire creative thinking within private, public, and not-for-profit
           organisations.
         </p>
         <p>
@@ -176,12 +203,14 @@
           organisations and their customers, to co-design better products and services.
         </p>
 
-        <div><span class='say-hello'>Say hello</span></div>
-        <div><a href='tel:+64277501555' class='say-hello phone'>+64(0)277501555</a></div>
-        <div>
-          <a class='say-hello email' href='mailto:leanne@wedesignbetterservices.co.nz'>
-            leanne@wedesignbetterservices.co.nz
-          </a>
+        <div class='contact'>
+          <div><span class='say-hello'>Say hello</span></div>
+          <div><a href='tel:+64277501555' class='say-hello phone'>+64(0)277501555</a></div>
+          <div>
+            <a class='say-hello email' href='mailto:leanne@wedesignbetterservices.co.nz'>
+              leanne@wedesignbetterservices.co.nz
+            </a>
+          </div>
         </div>
       </div>
       <span class='clear' />
